@@ -1,0 +1,15 @@
+<uwsgi>
+    <socket>0.0.0.0:8000</socket>
+    <socket>/tmp/uwsgi.sock</socket>
+    <protocol>http</protocol>
+    <wsgi-file>starter_prod.py</wsgi-file>
+    <callable>app</callable>
+    <pythonpath>/code</pythonpath>
+    <touch-reload>/code</touch-reload>
+    <py-autoreload/>
+    <master/>
+    <processes>10</processes>
+    <chmod-socket>666</chmod-socket>
+    <uid>www</uid>
+    <gid>www</gid>
+</uwsgi>
